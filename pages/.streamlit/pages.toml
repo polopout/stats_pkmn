@@ -1,0 +1,19 @@
+[[pages]]
+path = "main.py"
+name = "Accueil"
+icon = "🏠"
+
+[[pages]]
+path = "pages/carte_sociosarah.py"
+name = "Carte Socio Sarah"
+icon = "🗺️"
+
+[[pages]]
+path = "pages/quietesvous.py"
+name = "Qui êtes-vous ?"
+icon = "👤"
+
+[[pages]]
+path = "pages/top10_pokemon.py"
+name = "Top 10 Pokémon"
+icon = "🔝"
