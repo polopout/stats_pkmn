@@ -349,4 +349,4 @@ def generic_multi_pie(df, column, sep=",", title=None, protected_groups=None, ti
 
 
 def sidebar_logo():
-    st.sidebar.image("C:\\Users\\rpaul\\Desktop\\stats_pkmn\\data\\pub2.png", use_container_width=True)
+    st.sidebar.image("stats_pkmn\\data\\pub2.png", use_container_width=True)
