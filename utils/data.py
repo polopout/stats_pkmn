@@ -8,7 +8,6 @@ import re
 
 colonnes_rename = {
     "Horodateur": "horodateur",
-    "Adresse e-mail": "email",
     "Quel âge avez vous ?": "age",
     "Quel est votre genre ?": "genre",
     "Votre situation actuelle ?": "situation",
