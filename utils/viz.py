@@ -346,12 +346,12 @@ def generic_multi_pie(df, column, sep=",", title=None, protected_groups=None, ti
     return fig
 
 
-# Chemin relatif au fichier courant
-BASE_DIR = os.path.dirname(__file__)  # dossier où se trouve Accueil.py
-IMAGE_PATH = os.path.join(BASE_DIR, "data", "pub2.png")  # construit un chemin compatible Linux/Windows
+from pathlib import Path
+import streamlit as st
 
-st.sidebar.image(IMAGE_PATH, use_container_width=True)
-
+# chemin relatif depuis le fichier courant
+IMAGE_PATH = Path(__file__).parent / "data" / "pub2.png"
 
 def sidebar_logo():
-    st.sidebar.image(IMAGE_PATH, use_container_width=True)
+    st.sidebar.image(str(IMAGE_PATH), use_container_width=True)
+

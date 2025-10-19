@@ -110,17 +110,14 @@ colonnes_rename = {
 }
 
 # ----- Chargement des données avec cache -----
+
 @st.cache_data
 def load_data(filename="q7.csv"):
-    """
-    Charge un CSV depuis le dossier 'data', renomme les colonnes
-    selon le dictionnaire colonnes_rename et retourne un DataFrame.
-    """
-    base_dir = Path(__file__).parent  # dossier du fichier courant
-    file_path = base_dir / "data" / filename  # construit un chemin portable
-    df = pd.read_csv(file_path)
+    path = Path(__file__).parent.parent / "data" / filename
+    df = pd.read_csv(path)
     df = df.rename(columns=colonnes_rename)
     return df
+
 
 @st.cache_data
 def load_geojson():
