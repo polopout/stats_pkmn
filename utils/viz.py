@@ -350,9 +350,9 @@ from pathlib import Path
 import streamlit as st
 
 # chemin relatif depuis le fichier courant
-RACINE_FOLDER=Path(__file__).parent.parent 
+RACINE_FOLDER=Path(__file__).parent.parent
 DATA_FOLDER=os.path.join(RACINE_FOLDER,"data")
-IMAGE_PATH = os.path.join(RACINE_FOLDER, "pub2.png")
+IMAGE_PATH = os.path.join(DATA_FOLDER, "pub2.png")
 
 def sidebar_logo():
     st.sidebar.image(str(IMAGE_PATH), use_container_width=True)
