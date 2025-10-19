@@ -113,7 +113,9 @@ colonnes_rename = {
 
 @st.cache_data
 def load_data(filename="q7.csv"):
-    path = Path(__file__).parent.parent / "data" / filename
+    RACINE_FOLDER=Path(__file__).parent.parent 
+    DATA_FOLDER=os.path.join(RACINE_FOLDER,"data")
+    path=os.path.join(DATA_FOLDER,filename)
     df = pd.read_csv(path)
     df = df.rename(columns=colonnes_rename)
     return df
