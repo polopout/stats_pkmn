@@ -739,15 +739,12 @@ commentaire = """
     Chaque point représente une combinaison entre le <b>nombre de boosters ouverts par mois</b> 
     et la <b>valeur estimée des investissements</b>.  
     La <b>taille des points</b> indique le nombre de répondants correspondant à chaque profil observé.<br><br>
-
     On observe une forte concentration de <b>non-investisseurs</b> (en bleu) dans la partie 
     inférieure gauche du graphique : ils dépensent peu et ouvrent un nombre limité de boosters, 
     traduisant une pratique plus <b>loisir ou occasionnelle</b> du TCG.<br><br>
-
     À l’inverse, les <b>profils investisseurs</b> (en rouge) présentent logiquement des <b>valeurs d’investissement plus élevées</b>.  
     Toutefois, même parmi eux, l’ouverture mensuelle reste <b>modérée</b> — 
     rarement au-delà de <b>30 boosters par mois</b> — suggérant une approche plus <b>sélective et orientée vers la revente</b> plutôt que la consommation massive.<br><br>
-
     Ce graphique met donc en évidence <b>deux comportements bien distincts</b> :  
     une majorité de collectionneurs plaisir, et une minorité d’investisseurs.
 </div>
@@ -853,17 +850,14 @@ analyse_auto = """
     <br><br>
     En moyenne, les conventions TCG obtiennent des <b>notes globalement positives</b>, 
     avec des scores compris entre <b>2.1 et 3.5 sur 4</b>.<br><br>
-
     Les participants jugent particulièrement bien :<br>
     • <b>l’importance</b> de ces conventions (<b>3.46 / 4</b>), signe qu’elles sont perçues comme essentielles dans la communauté.<br>
     • <b>la qualité des exposants</b> (<b>3.08 / 4</b>) et la <b>disponibilité des produits</b> (<b>3.02 / 4</b>), 
     ce qui traduit une offre variée et satisfaisante.<br><br>
-
     En revanche, certains points méritent d’être améliorés :<br>
     • <b>les tarifs sur place</b> (<b>2.12 / 4</b>) sont perçus comme trop élevés par de nombreux visiteurs.<br>
     • <b>la sécurité</b> obtient la note la plus faible (<b>2.10 / 4</b>), 
     ce qui peut refléter un sentiment de manque de contrôle ou d’organisation dans les grands événements.<br><br>
-
     Enfin, le <b>prix d’entrée</b> reste jugé plutôt correct (<b>2.73 / 4</b>), 
     plaçant le rapport qualité-prix dans une zone acceptable.<br><br>
 </div>
