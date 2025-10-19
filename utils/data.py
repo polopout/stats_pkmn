@@ -4,6 +4,8 @@ import streamlit as st
 from collections import Counter
 import unicodedata
 import re
+import os
+from pathlib import Path
 
 
 colonnes_rename = {
@@ -109,8 +111,14 @@ colonnes_rename = {
 
 # ----- Chargement des données avec cache -----
 @st.cache_data
-def load_data(path="data/q7.csv"):
-    df = pd.read_csv(path)
+def load_data(filename="q7.csv"):
+    """
+    Charge un CSV depuis le dossier 'data', renomme les colonnes
+    selon le dictionnaire colonnes_rename et retourne un DataFrame.
+    """
+    base_dir = Path(__file__).parent  # dossier du fichier courant
+    file_path = base_dir / "data" / filename  # construit un chemin portable
+    df = pd.read_csv(file_path)
     df = df.rename(columns=colonnes_rename)
     return df
 
