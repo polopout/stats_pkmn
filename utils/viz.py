@@ -355,5 +355,8 @@ DATA_FOLDER=os.path.join(RACINE_FOLDER,"data")
 IMAGE_PATH = os.path.join(DATA_FOLDER, "pub2.png")
 
 def sidebar_logo():
+    print(RACINE_FOLDER)
+    print(DATA_FOLDER)
+    print(IMAGE_PATH)
     st.sidebar.image(str(IMAGE_PATH), use_container_width=True)
 
