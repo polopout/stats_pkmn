@@ -313,7 +313,7 @@ counts.columns = ["carte", "nb_votes"]
 top3 = counts.head(10)
 
 
-IMAGE_FOLDER = "stats_pkmn\\data"  # ton dossier avec les visuels
+IMAGE_FOLDER = "data"  # ton dossier avec les visuels
 
 import os
 
