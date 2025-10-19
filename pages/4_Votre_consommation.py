@@ -265,13 +265,6 @@ with col2400:
     """
     st.markdown(commentaire, unsafe_allow_html=True)
 
-df_counts2 = clean_and_count_column(df, "boutique_preferee") 
-
-with col2500:
-    #plt = wordcloud_plot(df_counts2, column="word", title="mots les plus cités")
-    #st.pyplot(plt)
-    pass
-
 
 
 

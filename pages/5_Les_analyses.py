@@ -847,6 +847,7 @@ analyse = f"""
 </div>
 """
 st.markdown(analyse, unsafe_allow_html=True)
+
 analyse_auto = """
 <div style="font-size:20px; line-height:1.6;">
     <br><br>

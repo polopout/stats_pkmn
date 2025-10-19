@@ -254,30 +254,6 @@ def generic_multi_bar(df, column, sep=",", horizontal=False, title=None,
 
 
 
-def _split_outside_parentheses(s, sep=','):
-    """Split s on sep but ignore sep inside parentheses. sep doit être un seul caractère."""
-    parts = []
-    cur = []
-    depth = 0
-    for ch in s:
-        if ch == '(':
-            depth += 1
-        elif ch == ')':
-            if depth > 0:
-                depth -= 1
-        if ch == sep and depth == 0:
-            token = ''.join(cur).strip()
-            if token:
-                parts.append(token)
-            cur = []
-        else:
-            cur.append(ch)
-    last = ''.join(cur).strip()
-    if last:
-        parts.append(last)
-    return parts
-
-
 
 def _split_outside_parentheses(s, sep=','):
     """Split s on sep but ignore sep inside parentheses. sep doit être un seul caractère."""
